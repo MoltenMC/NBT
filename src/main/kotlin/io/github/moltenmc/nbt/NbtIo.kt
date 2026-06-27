@@ -1,4 +1,4 @@
-package io.github.agent0876.nbt
+package io.github.moltenmc.nbt
 
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
@@ -35,7 +35,7 @@ object NbtIo {
 
     /**
      * Decompresses gzip and reads as Java Edition NBT.
-     * Use this on bytes returned by [io.github.agent0876.anvil.Anvil.readChunk].
+     * Use this on bytes returned by [io.github.moltenmc.anvil.Anvil.readChunk].
      */
     fun readCompressed(bytes: ByteArray): NbtCompound {
         val decompressed = GZIPInputStream(ByteArrayInputStream(bytes)).readBytes()
@@ -44,7 +44,7 @@ object NbtIo {
 
     /**
      * Writes as Java Edition NBT and gzip-compresses.
-     * Use this to produce bytes for [io.github.agent0876.anvil.Anvil.writeChunk].
+     * Use this to produce bytes for [io.github.moltenmc.anvil.Anvil.writeChunk].
      */
     fun writeCompressed(compound: NbtCompound, rootName: String = ""): ByteArray {
         val raw = Nbt.writeJava(compound, rootName)

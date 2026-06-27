@@ -1,4 +1,4 @@
-package io.github.agent0876.nbt
+package io.github.moltenmc.nbt
 
 sealed class NbtTag
 

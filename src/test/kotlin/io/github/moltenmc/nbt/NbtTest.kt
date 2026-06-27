@@ -1,4 +1,4 @@
-package io.github.agent0876.nbt
+package io.github.moltenmc.nbt
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
