@@ -36,7 +36,7 @@ mavenPublishing {
     pom {
         name.set("nbt")
         description.set("Kotlin NBT library for Minecraft Java and Bedrock Edition")
-        url.set("https://github.com/Agent0876/NBT")
+        url.set("https://github.com/MoltenMC/NBT")
 
         licenses {
             license {
@@ -54,9 +54,9 @@ mavenPublishing {
         }
 
         scm {
-            connection.set("scm:git:git://github.com/Agent0876/NBT.git")
-            developerConnection.set("scm:git:ssh://github.com/Agent0876/NBT.git")
-            url.set("https://github.com/Agent0876/NBT")
+            connection.set("scm:git:git://github.com/MoltenMC/NBT.git")
+            developerConnection.set("scm:git:ssh://github.com/MoltenMC/NBT.git")
+            url.set("https://github.com/MoltenMC/NBT")
         }
     }
 }
